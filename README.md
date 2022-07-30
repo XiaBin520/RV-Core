@@ -1,2 +1,1 @@
-!!! note
-  To complete a RISC-V CPU core by chisel
+## To complete a RISC-V CPU core by chisel
