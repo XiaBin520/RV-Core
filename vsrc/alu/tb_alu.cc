@@ -9,6 +9,9 @@
 #include "Valu___024root.h"
 
 
+typedef long long int           int64;
+typedef unsigned long long int  uint64;
+
 
 int main(){
 
@@ -20,17 +23,17 @@ int main(){
     dut->eval();
 
     
-    uint64_t op   = 0;
-    uint64_t src1 = 0;
-    uint64_t src2 = 0;
-    uint64_t Mout = 0;
-    uint64_t Cout = 0;
+    uint64 op   = 0;
+    uint64 src1 = 0;
+    uint64 src2 = 0;
+    uint64 Mout = 0;
+    uint64 Cout = 0;
 
     srand(time(NULL));
 
-    for(int64_t j = 0; j < 1000000 * 100; j++){
-        src1 = (uint64_t)(rand());
-        src2 = (uint64_t)(rand());
+    for(int64 j = 0; j < 1000000 * 100; j++){
+        src1 = (uint64)(rand());
+        src2 = (uint64)(rand());
         if(j % 1000000 == 0) printf("src1 = %lu, src2 = %lu\n", src1, src2);
 
         for(int i = 0; i < 10; i++){
@@ -46,14 +49,14 @@ int main(){
 
             Cout = (i == 0) ? (src1 + src2) :
                    (i == 1) ? (src1 - src2) :
-                   (i == 2) ? ((int64_t)(src1) < (int64_t)src2) :
-                   (i == 3) ? ((uint64_t)(src1) < (uint64_t)src2) :
+                   (i == 2) ? ((int64)(src1) < (int64)src2) :
+                   (i == 3) ? ((uint64)(src1) < (uint64)src2) :
                    (i == 4) ? (src1 ^ src2) :
                    (i == 5) ? (src1 | src2) :
                    (i == 6) ? (src1 & src2) :
                    (i == 7) ? (src1 << src2) :
                    (i == 8) ? (src1 >> src2) :
-                   (i == 9) ? ((int64_t)src1 >> src2) :
+                   (i == 9) ? ((int64)src1 >> src2) :
                    -1;
 
             if(Mout != Cout) {
