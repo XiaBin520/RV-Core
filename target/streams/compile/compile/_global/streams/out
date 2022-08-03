@@ -1,4 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/alu.scala:28:59: value saUInt is not a member of chisel3.Bool[0m
-[0m[[0m[31merror[0m] [0m[0m        is(opSLess)   {out := (src1.asSInt < src2.asSInt).saUInt}[0m
-[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/ctrlTransfer.scala:30:20: overloaded method value apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: chisel3.UInt)chisel3.Bool <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)chisel3.Bool <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: BigInt)chisel3.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m  rs1ADDimm := (io.rs1Data(31.0) + imm) & "hfffffffe".U[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

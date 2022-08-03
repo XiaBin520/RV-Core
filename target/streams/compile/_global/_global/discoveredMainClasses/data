@@ -1,1 +1,1 @@
-["alu","immSext"]
+["alu","ctrlTransfer","immSext","regFile"]
