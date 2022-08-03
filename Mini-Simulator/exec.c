@@ -2,6 +2,9 @@
 #include "core.h"
 
 
+
+
+
 void exec(core *CPU, uint32 instrTYPE){
     uint32 rd     = (CPU->instr & RD_MASK)  >> 7;
     uint32 rs1    = (CPU->instr & RS1_MASK) >> 15;

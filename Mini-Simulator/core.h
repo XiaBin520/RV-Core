@@ -4,6 +4,7 @@ typedef           int            int32;
 typedef  unsigned int            uint32;
 
 
+
 #define  OPCODE_MASK  0b00000000000000000000000001111111
 #define  RD_MASK      0b00000000000000000000111110000000
 #define  FUNCT3_MASK  0b00000000000000000111000000000000
