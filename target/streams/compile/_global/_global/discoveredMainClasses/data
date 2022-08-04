@@ -1,1 +1,1 @@
-["alu","ctrlTransfer","immSext","regFile"]
+["alu","aluW","ctrlTransfer","decoder","immSext","regFile","testScala"]

@@ -22,7 +22,7 @@ class regFile extends Module {
   val rData1 = WireDefault(0.U(64.W))
   val rData2 = WireDefault(0.U(64.W))
 
-  val gprFile = Reg(Vec(32, UInt(64.W)))
+  val gprFile = RegInit( VecInit(  Seq.fill(32)(0.U(64.W))  )  )
   rData1 := gprFile(rs1)
   rData2 := gprFile(rs2)
   when(rs1 === rd && wEn && rd =/= 0.U){

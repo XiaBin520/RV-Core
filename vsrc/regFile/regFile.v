@@ -42,37 +42,37 @@ module regFile(
   reg [63:0] _RAND_29;
   reg [63:0] _RAND_30;
 `endif // RANDOMIZE_REG_INIT
-  reg [63:0] gprFile_1; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_2; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_3; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_4; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_5; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_6; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_7; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_8; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_9; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_10; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_11; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_12; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_13; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_14; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_15; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_16; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_17; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_18; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_19; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_20; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_21; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_22; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_23; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_24; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_25; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_26; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_27; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_28; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_29; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_30; // @[regFile.scala 25:20]
-  reg [63:0] gprFile_31; // @[regFile.scala 25:20]
+  reg [63:0] gprFile_1; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_2; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_3; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_4; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_5; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_6; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_7; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_8; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_9; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_10; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_11; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_12; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_13; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_14; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_15; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_16; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_17; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_18; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_19; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_20; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_21; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_22; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_23; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_24; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_25; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_26; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_27; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_28; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_29; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_30; // @[regFile.scala 25:24]
+  reg [63:0] gprFile_31; // @[regFile.scala 25:24]
   wire [63:0] _GEN_1 = 5'h1 == io_rs1 ? gprFile_1 : 64'h0; // @[regFile.scala 26:{10,10}]
   wire [63:0] _GEN_2 = 5'h2 == io_rs1 ? gprFile_2 : _GEN_1; // @[regFile.scala 26:{10,10}]
   wire [63:0] _GEN_3 = 5'h3 == io_rs1 ? gprFile_3 : _GEN_2; // @[regFile.scala 26:{10,10}]
@@ -139,157 +139,219 @@ module regFile(
   assign io_rData1 = io_rs1 == io_rd & io_wEn & io_rd != 5'h0 ? io_wData : _GEN_31; // @[regFile.scala 26:10 28:40 29:12]
   assign io_rData2 = io_rs2 == io_rd & io_wEn & _T_2 ? io_wData : _GEN_63; // @[regFile.scala 27:10 31:40 32:12]
   always @(posedge clock) begin
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_1 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_1 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_2 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h2 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_2 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_3 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h3 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_3 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_4 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h4 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_4 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_5 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h5 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_5 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_6 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h6 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_6 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_7 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h7 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_7 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_8 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h8 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_8 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_9 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h9 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_9 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_10 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'ha == io_rd) begin // @[regFile.scala 36:17]
         gprFile_10 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_11 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'hb == io_rd) begin // @[regFile.scala 36:17]
         gprFile_11 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_12 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'hc == io_rd) begin // @[regFile.scala 36:17]
         gprFile_12 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_13 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'hd == io_rd) begin // @[regFile.scala 36:17]
         gprFile_13 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_14 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'he == io_rd) begin // @[regFile.scala 36:17]
         gprFile_14 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_15 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'hf == io_rd) begin // @[regFile.scala 36:17]
         gprFile_15 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_16 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h10 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_16 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_17 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h11 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_17 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_18 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h12 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_18 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_19 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h13 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_19 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_20 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h14 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_20 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_21 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h15 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_21 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_22 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h16 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_22 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_23 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h17 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_23 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_24 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h18 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_24 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_25 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h19 == io_rd) begin // @[regFile.scala 36:17]
         gprFile_25 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_26 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1a == io_rd) begin // @[regFile.scala 36:17]
         gprFile_26 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_27 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1b == io_rd) begin // @[regFile.scala 36:17]
         gprFile_27 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_28 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1c == io_rd) begin // @[regFile.scala 36:17]
         gprFile_28 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_29 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1d == io_rd) begin // @[regFile.scala 36:17]
         gprFile_29 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_30 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1e == io_rd) begin // @[regFile.scala 36:17]
         gprFile_30 <= io_wData; // @[regFile.scala 36:17]
       end
     end
-    if (io_wEn) begin // @[regFile.scala 35:12]
+    if (reset) begin // @[regFile.scala 25:24]
+      gprFile_31 <= 64'h0; // @[regFile.scala 25:24]
+    end else if (io_wEn) begin // @[regFile.scala 35:12]
       if (5'h1f == io_rd) begin // @[regFile.scala 36:17]
         gprFile_31 <= io_wData; // @[regFile.scala 36:17]
       end
