@@ -1,23 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "10000?"[0m
+[0m[[0m[31merror[0m] [0m[0mscala.MatchError: List(UInt<3>(0), UInt<3>(1), UInt<3>(2), UInt<3>(3), UInt<3>(4), UInt<3>(5)) (of class scala.collection.immutable.$colon$colon)[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
-[0m[[0m[31merror[0m] [0m[0m	at decoder.$anonfun$new$101(decoder.scala:216)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.$anonfun$new$1(When.scala:139)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.Option.foreach(Option.scala:407)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.<init>(When.scala:139)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.elsewhen(When.scala:114)[0m
-[0m[[0m[31merror[0m] [0m[0m	at decoder.$anonfun$new$97(decoder.scala:216)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.<init>(When.scala:143)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.elsewhen(When.scala:114)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.util.SwitchContext.is(Conditional.scala:37)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.util.SwitchContext.is(Conditional.scala:45)[0m
-[0m[[0m[31merror[0m] [0m[0m	at decoder.$anonfun$new$73(decoder.scala:200)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.<init>(When.scala:143)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.WhenContext.elsewhen(When.scala:114)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.util.SwitchContext.is(Conditional.scala:37)[0m
-[0m[[0m[31merror[0m] [0m[0m	at chisel3.util.SwitchContext.is(Conditional.scala:45)[0m
-[0m[[0m[31merror[0m] [0m[0m	at decoder.<init>(decoder.scala:92)[0m
-[0m[[0m[31merror[0m] [0m[0m	at decoder$.$anonfun$new$210(decoder.scala:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at miniCore.ctrlCore.$anonfun$x$1$1(ctrlCore.scala:87)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.internal.plugin.package$.autoNameRecursivelyProduct(package.scala:48)[0m
+[0m[[0m[31merror[0m] [0m[0m	at miniCore.ctrlCore.<init>(ctrlCore.scala:87)[0m
+[0m[[0m[31merror[0m] [0m[0m	at miniCore.ctrlCore$.$anonfun$new$164(ctrlCore.scala:385)[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.lang.NumberFormatException: For input string: "10000?"[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) scala.MatchError: List(UInt<3>(0), UInt<3>(1), UInt<3>(2), UInt<3>(3), UInt<3>(4), UInt<3>(5)) (of class scala.collection.immutable.$colon$colon)[0m

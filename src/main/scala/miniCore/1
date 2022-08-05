@@ -1,0 +1,7 @@
+val pcHold      = WireDefault(false.B)
+  val IFIDHold    = WireDefault(false.B)
+  val IDEXHold    = WireDefault(false.B)
+  val EXMEMHold   = WireDefault(false.B)
+  val MEMWBHold   = WireDefault(false.B)
+  val IFIDFlush   = WireDefault(false.B)
+  val IDEXFlush   = WireDefault(false.B)

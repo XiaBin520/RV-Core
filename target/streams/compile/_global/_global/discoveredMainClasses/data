@@ -1,1 +1,1 @@
-["alu","aluW","ctrlTransfer","decoder","immSext","regFile","testScala"]
+["miniCore.EX_MEM","miniCore.ID_EX","miniCore.IF_ID","miniCore.MEM_WB","miniCore.PC","miniCore.alu","miniCore.aluW","miniCore.ctrlCore","miniCore.ctrlTransfer","miniCore.dataPath","miniCore.decoder","miniCore.ifStage","miniCore.immSext","miniCore.regFile","miniCore.testScala"]
