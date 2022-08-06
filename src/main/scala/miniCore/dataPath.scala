@@ -35,24 +35,24 @@ class dataPath extends Module{
   val rs1DataCtrl = WireDefault(0.U(2.W))
   val rs2DataCtrl = WireDefault(0.U(2.W))
 
-  when(rs1REn_ID && rdWEn_EX && rs1Num_ID === rdNum_EX){
+  when(rs1REn_ID && rdWEn_EX && rs1Num_ID === rdNum_EX && rdNum_EX =/= 0.U){
     rs1DataCtrl := exData
   }
-  .elsewhen(rs1REn_ID && rdWEn_MEM && rs1Num_ID === rdNum_MEM){
+  .elsewhen(rs1REn_ID && rdWEn_MEM && rs1Num_ID === rdNum_MEM && rdNum_MEM =/= 0.U){
     rs1DataCtrl := memData
   }
-  .elsewhen(rs1REn_ID && rdWEn_WB && rs1Num_ID === rdNum_WB){
+  .elsewhen(rs1REn_ID && rdWEn_WB && rs1Num_ID === rdNum_WB && rdNum_WB =/= 0.U){
     rs1DataCtrl := wbData
   }
 
 
-  when(rs2REn_ID && rdWEn_EX && rs2Num_ID === rdNum_EX){
+  when(rs2REn_ID && rdWEn_EX && rs2Num_ID === rdNum_EX && rdNum_EX =/= 0.U){
     rs2DataCtrl := exData
   }
-  .elsewhen(rs2REn_ID && rdWEn_MEM && rs2Num_ID === rdNum_MEM){
+  .elsewhen(rs2REn_ID && rdWEn_MEM && rs2Num_ID === rdNum_MEM && rdNum_MEM =/= 0.U){
     rs2DataCtrl := memData
   }
-  .elsewhen(rs2REn_ID && rdWEn_WB && rs2Num_ID === rdNum_WB){
+  .elsewhen(rs2REn_ID && rdWEn_WB && rs2Num_ID === rdNum_WB && rdNum_WB =/= 0.U){
     rs2DataCtrl := wbData
   }
 
