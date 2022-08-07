@@ -1,1 +1,1 @@
-["miniCore.EX_MEM","miniCore.ID_EX","miniCore.IF_ID","miniCore.MEM_WB","miniCore.PC","miniCore.alu","miniCore.aluW","miniCore.ctrlTransfer","miniCore.dataPath","miniCore.dataRead","miniCore.dataWrite","miniCore.decoder","miniCore.hazardCheck","miniCore.ifStage","miniCore.immSext","miniCore.insterRead","miniCore.regFile","miniCore.testScala"]
+["Transfer","miniCore.ALU","miniCore.CoreCtrl","miniCore.DataPath","miniCore.EX_MEM","miniCore.IDStage","miniCore.ID_EX","miniCore.IFStage","miniCore.IF_ID","miniCore.MEM_WB","miniCore.PC","miniCore.WordALU"]

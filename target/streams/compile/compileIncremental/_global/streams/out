@@ -1,28 +1,28 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 73 products, 22 sources, 4 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/miniCore/hazardCheckFSM.scala, ${BASE}/src/main/scala/miniCore/ctrlTransfer.scala, ${BASE}/src/main/scala/miniCore/regFile.scala, ${BASE}/src/main/scala/miniCore/aluW.scala, ${BASE}/src/main/scala/miniCore/alu.scala, ${BASE}/src/main/scala/miniCore/instrReadFSM.scala, ${BASE}/src/main/scala/miniCore/mainCtrl.scala, ${BASE}/src/main/scala/miniCore/MEM_WB.scala, ${BASE}/src/main/scala/miniCore/core.scala, ${BASE}/src/main/scala/miniCore/dataWriteFSM.scala, ${BASE}/src/main/scala/miniCore/testScala.scala, ${BASE}/src/main/scala/miniCore/EX_MEM.scala, ${BASE}/src/main/scala/miniCore/dataPath.scala, ${BASE}/src/main/scala/miniCore/decoder.scala, ${BASE}/src/main/scala/miniCore/dataReadFSM.scala, ${BASE}/src/main/scala/miniCore/ID_EX.scala, ${BASE}/src/main/scala/miniCore/PC.scala, ${BASE}/src/main/scala/miniCore/ifStage.scala, ${BASE}/src/main/scala/miniCore/IF_ID.scala, ${BASE}/src/main/scala/miniCore/immSext.scala, ${BASE}/src/main/scala/miniCore/ctrlCore.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/miniCore/idStage.scala), changed = Set(${BASE}/src/main/scala/miniCore/hazardCheckFSM.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 116 products, 19 sources, 4 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/miniCore/aluW.scala, ${BASE}/src/main/scala/miniCore/alu.scala, ${BASE}/src/main/scala/miniCore/IDStage.scala, ${BASE}/src/main/scala/miniCore/MEM_WB.scala, ${BASE}/src/main/scala/miniCore/CoreCtrl.scala, ${BASE}/src/main/scala/miniCore/core.scala, ${BASE}/src/main/scala/miniCore/IFStage.scala, ${BASE}/src/main/scala/miniCore/testScala.scala, ${BASE}/src/main/scala/miniCore/EX_MEM.scala, ${BASE}/src/main/scala/miniCore/dataPath.scala, ${BASE}/src/main/scala/miniCore/decoder.scala, ${BASE}/src/main/scala/miniCore/Transfer.scala, ${BASE}/src/main/scala/miniCore/ID_EX.scala, ${BASE}/src/main/scala/miniCore/PC.scala, ${BASE}/src/main/scala/miniCore/RegFile.scala, ${BASE}/src/main/scala/miniCore/IF_ID.scala, ${BASE}/src/main/scala/miniCore/immSext.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/miniCore/ctrlCore.scala, ${BASE}/src/main/scala/miniCore/idStage.scala), changed = Set(${BASE}/src/main/scala/miniCore/IDStage.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set(${BASE}/src/main/scala/miniCore/idStage.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set(${BASE}/src/main/scala/miniCore/ctrlCore.scala, ${BASE}/src/main/scala/miniCore/idStage.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/miniCore/hazardCheckFSM.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/miniCore/IDStage.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(miniCore.hazardCheck, miniCore.hazardCheckIO)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(miniCore.IDStage_HAZARD_IO, miniCore.Decoder_IF_IO, miniCore.Decoder_EX_IOD, miniCore.IDStage_IO, miniCore.Decoder_IO, miniCore.RegFile_ID_IO, miniCore.IDStage, miniCore.IDStage_DATAPATH_IO, miniCore.ImmSext_IO, miniCore.Transfer_IO, miniCore.Decoder_EX_IOA, miniCore.RegFile, miniCore.IDStage_PC_IO, miniCore.IDStage_EX_IO, miniCore.Transfer, miniCore.IDStage_IF_IO, miniCore.RegFile_EX_IO, miniCore.Transfer_ID_IOA, miniCore.Transfer_PC_IO, miniCore.Decoder_EX_IOB, miniCore.RegFile_WB_IO, miniCore.Decoder_ID_IO, miniCore.Transfer_ID_IOB, miniCore.ImmSext, miniCore.Decoder, miniCore.Decoder_EX_IOC, miniCore.RegFile_IO)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(miniCore.hazardCheck, miniCore.hazardCheckIO)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/miniCore/hazardCheckFSM.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: miniCore.hazardCheck, miniCore.hazardCheckIO[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(miniCore.IDStage_HAZARD_IO, miniCore.Decoder_IF_IO, miniCore.Decoder_EX_IOD, miniCore.IDStage_IO, miniCore.Decoder_IO, miniCore.RegFile_ID_IO, miniCore.IDStage, miniCore.IDStage_DATAPATH_IO, miniCore.ImmSext_IO, miniCore.Transfer_IO, miniCore.Decoder_EX_IOA, miniCore.RegFile, miniCore.IDStage_PC_IO, miniCore.IDStage_EX_IO, miniCore.Transfer, miniCore.IDStage_IF_IO, miniCore.RegFile_EX_IO, miniCore.Transfer_ID_IOA, miniCore.Transfer_PC_IO, miniCore.Decoder_EX_IOB, miniCore.RegFile_WB_IO, miniCore.Decoder_ID_IO, miniCore.Transfer_ID_IOB, miniCore.ImmSext, miniCore.Decoder, miniCore.Decoder_EX_IOC, miniCore.RegFile_IO)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/miniCore/IDStage.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: miniCore.IDStage_HAZARD_IO, miniCore.Decoder_IF_IO, miniCore.Decoder_EX_IOD, miniCore.IDStage_IO, miniCore.Decoder_IO, miniCore.RegFile_ID_IO, miniCore.IDStage, miniCore.IDStage_DATAPATH_IO, miniCore.ImmSext_IO, miniCore.Transfer_IO, miniCore.Decoder_EX_IOA, miniCore.RegFile, miniCore.IDStage_PC_IO, miniCore.IDStage_EX_IO, miniCore.Transfer, miniCore.IDStage_IF_IO, miniCore.RegFile_EX_IO, miniCore.Transfer_ID_IOA, miniCore.Transfer_PC_IO, miniCore.Decoder_EX_IOB, miniCore.RegFile_WB_IO, miniCore.Decoder_ID_IO, miniCore.Transfer_ID_IOB, miniCore.ImmSext, miniCore.Decoder, miniCore.Decoder_EX_IOC, miniCore.RegFile_IO[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/xiabin/workstation/CPU-Core/RV-Core/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.7.1:compile for Scala 2.12.13[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 7f914f31 for Scala compiler version 2.12.13[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 356439db for Scala compiler version 2.12.13[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-language:reflectiveCalls[0m
@@ -37,5 +37,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.368919295 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 7.97131304 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

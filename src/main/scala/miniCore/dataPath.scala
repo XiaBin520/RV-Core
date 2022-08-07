@@ -3,64 +3,69 @@ package miniCore
 import chisel3._
 import chisel3.util._
 
-class dataPathIO extends Bundle{
-  val rs1REn_ID   = Input(Bool())
-  val rs2REn_ID   = Input(Bool())
-  val rs1Num_ID   = Input(UInt(5.W))
-  val rs2Num_ID   = Input(UInt(5.W))
-  val rdWEn_EX    = Input(Bool())
-  val rdNum_EX    = Input(UInt(5.W))
-  val rdWEn_MEM   = Input(Bool())
-  val rdNum_MEM   = Input(UInt(5.W))
-  val rdWEn_WB    = Input(Bool())
-  val rdNum_WB    = Input(UInt(5.W))
-  val rs1DataCtrl = Output(UInt(2.W))
-  val rs2DataCtrl = Output(UInt(2.W))
+class DataPath_ID_IOA extends Bundle{
+  val Rs1REn = Input(Bool())
+  val Rs2REn = Input(Bool())
+  val Rs1    = Input(UInt(5.W))
+  val Rs2    = Input(UInt(5.W))
 }
 
-class dataPath extends Module{
-  val io = IO(new dataPathIO())
-  val rs1REn_ID   = io.rs1REn_ID
-  val rs2REn_ID   = io.rs2REn_ID
-  val rs1Num_ID   = io.rs1Num_ID
-  val rs2Num_ID   = io.rs2Num_ID
-  val rdWEn_EX    = io.rdWEn_EX
-  val rdNum_EX    = io.rdNum_EX
-  val rdWEn_MEM   = io.rdWEn_MEM
-  val rdNum_MEM   = io.rdNum_MEM
-  val rdWEn_WB    = io.rdWEn_WB
-  val rdNum_WB    = io.rdNum_WB
+class DataPath_ID_IOB extends Bundle{
+  val Rs1Ctrl = Output(UInt(2.W))
+  val Rs2Ctrl = Output(UInt(2.W))
+}
 
-  val regFile :: exData :: memData :: wbData :: Nil = Enum(4)
-  val rs1DataCtrl = WireDefault(0.U(2.W))
-  val rs2DataCtrl = WireDefault(0.U(2.W))
+class DataPath_MEM_IO extends Bundle{
+  val RegWEn  = Input(Bool())
+  val RegWSrc = Input(UInt(2.W))
+  val Rd      = Input(UInt(5.W))
+}
 
-  when(rs1REn_ID && rdWEn_EX && rs1Num_ID === rdNum_EX && rdNum_EX =/= 0.U){
-    rs1DataCtrl := exData
-  }
-  .elsewhen(rs1REn_ID && rdWEn_MEM && rs1Num_ID === rdNum_MEM && rdNum_MEM =/= 0.U){
-    rs1DataCtrl := memData
-  }
-  .elsewhen(rs1REn_ID && rdWEn_WB && rs1Num_ID === rdNum_WB && rdNum_WB =/= 0.U){
-    rs1DataCtrl := wbData
-  }
-
-
-  when(rs2REn_ID && rdWEn_EX && rs2Num_ID === rdNum_EX && rdNum_EX =/= 0.U){
-    rs2DataCtrl := exData
-  }
-  .elsewhen(rs2REn_ID && rdWEn_MEM && rs2Num_ID === rdNum_MEM && rdNum_MEM =/= 0.U){
-    rs2DataCtrl := memData
-  }
-  .elsewhen(rs2REn_ID && rdWEn_WB && rs2Num_ID === rdNum_WB && rdNum_WB =/= 0.U){
-    rs2DataCtrl := wbData
-  }
-
-  io.rs1DataCtrl := rs1DataCtrl
-  io.rs2DataCtrl := rs2DataCtrl
+class DataPath_WB_IO extends Bundle{
+  val RegWEn = Input(Bool())
+  val Rd     = Input(UInt(5.W))
 }
 
 
-object dataPath extends App{
-  (new chisel3.stage.ChiselStage).emitVerilog(new dataPath())
+class DataPath_IO extends Bundle{
+  val ID_A = new DataPath_ID_IOA()
+  val ID_B = new DataPath_ID_IOB()
+  val MEM  = new DataPath_MEM_IO()
+  val WB   = new DataPath_WB_IO()
+}
+
+class DataPath extends Module{
+  val io = IO(new DataPath_IO())
+
+  val noneSrc  :: aluSrc  :: memSrc :: Nil = Enum(3)
+  val noneData :: memData :: wbData :: Nil = Enum(3)
+
+  when(io.MEM.RegWEn && io.MEM.RegWSrc === aluSrc && io.MEM.Rd =/= 0.U && io.ID_A.Rs1REn && io.ID_A.Rs1 === io.MEM.Rd){
+    io.ID_B.Rs1Ctrl := memData
+  }
+  .elsewhen(io.WB.RegWEn && io.WB.Rd =/= 0.U && io.ID_A.Rs1REn && io.ID_A.Rs1 === io.WB.Rd){
+    io.ID_B.Rs1Ctrl := wbData
+  }
+  .otherwise{
+    io.ID_B.Rs1Ctrl := noneData
+  }
+
+
+  when(io.MEM.RegWEn && io.MEM.RegWSrc === aluSrc && io.MEM.Rd =/= 0.U && io.ID_A.Rs2REn && io.ID_A.Rs2 === io.MEM.Rd){
+    io.ID_B.Rs2Ctrl := memData
+  }
+  .elsewhen(io.WB.RegWEn && io.WB.Rd =/= 0.U && io.ID_A.Rs2REn && io.ID_A.Rs2 === io.WB.Rd){
+    io.ID_B.Rs2Ctrl := wbData
+  }
+  .otherwise{
+    io.ID_B.Rs2Ctrl := noneData
+  }
+
+}
+
+
+
+
+object DataPath extends App{
+  (new chisel3.stage.ChiselStage).emitVerilog(new DataPath())
 }

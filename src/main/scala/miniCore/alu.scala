@@ -20,28 +20,32 @@ import chisel3.util._
     9 --> >>s --> opSRShift
 ***/
 
-class aluIO extends Bundle{
-  val aluOP = Input(UInt(4.W))
-  val aluSrc1 = Input(UInt(64.W))
-  val aluSrc2 = Input(UInt(64.W))
-  val aluOut = Output(UInt(64.W))
+class ALU_ID_IO extends Bundle{
+  val ALUOP = Input(UInt(4.W))
+  val Src1 = Input(UInt(64.W))
+  val Src2 = Input(UInt(64.W))
+}
+
+class ALU_MEM_IO extends Bundle{
+  val ALUOut = Output(UInt(64.W))
+}
+
+class ALU_IO extends Bundle{
+    val ID  = new ALU_ID_IO()
+    val MEM = new ALU_MEM_IO()
 }
 
 
-
-class alu extends Module {
-    val io = IO(new aluIO())
-
+class ALU extends Module {
+    val io = IO(new ALU_IO())
 
     val opAdd :: opSub :: opSLess :: opULess :: opXor :: opOr :: opAnd :: opLShift :: opURShift :: opSRShift :: Nil = Enum(10)
 
-
-    val op       = io.aluOP
-    val src1     = io.aluSrc1
-    val src2     = io.aluSrc2
-    val shiftNum = io.aluSrc2(5, 0)
-    val out      = WireDefault(0.U(64.W))
-
+    val op    = io.ID.ALUOP
+    val src1  = io.ID.Src1
+    val src2  = io.ID.Src2
+    val shamt = io.ID.Src2(5, 0)
+    val out   = WireDefault(0.U(64.W))
 
     switch(op){
         is(opAdd)     {out := src1 + src2}
@@ -51,15 +55,15 @@ class alu extends Module {
         is(opXor)     {out := src1 ^ src2}
         is(opOr)      {out := src1 | src2}
         is(opAnd)     {out := src1 & src2}
-        is(opLShift)  {out := src1 << shiftNum}
-        is(opURShift) {out := src1 >> shiftNum}
-        is(opSRShift) {out := (src1.asSInt >> shiftNum).asUInt}
+        is(opLShift)  {out := src1 << shamt}
+        is(opURShift) {out := src1 >> shamt}
+        is(opSRShift) {out := (src1.asSInt >> shamt).asUInt}
     } 
 
-    io.aluOut := out
+    io.MEM.ALUOut := out
 }
 
 
-object alu extends App {
-    (new chisel3.stage.ChiselStage).emitVerilog(new alu())
+object ALU extends App {
+    (new chisel3.stage.ChiselStage).emitVerilog(new ALU())
 }

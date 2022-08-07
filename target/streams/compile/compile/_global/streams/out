@@ -1,144 +1,55 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:4:29: not found: type Bundle[0m
-[0m[[0m[31merror[0m] [0m[0mclass hazardCheckIO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:6:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteEn_EX    = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:6:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteEn_EX    = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:7:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_EX   = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:7:32: not found: value UInt[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_EX   = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:7:39: value W is not a member of Int[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_EX   = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:9:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteEn_MEM   = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:9:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteEn_MEM   = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:10:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_MEM  = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:10:32: not found: value UInt[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_MEM  = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:10:39: value W is not a member of Int[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteNum_MEM  = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:11:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteSrc_MEM  = Input(UInt(2.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:11:32: not found: value UInt[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteSrc_MEM  = Input(UInt(2.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:11:39: value W is not a member of Int[0m
-[0m[[0m[31merror[0m] [0m[0m  val regWriteSrc_MEM  = Input(UInt(2.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:13:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs1ReadEn_ID  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:13:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs1ReadEn_ID  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:14:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs2ReadEn_ID  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:14:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs2ReadEn_ID  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:15:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs1Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:15:32: not found: value UInt[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs1Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:15:39: value W is not a member of Int[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs1Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:16:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs2Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:16:32: not found: value UInt[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs2Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:16:39: value W is not a member of Int[0m
-[0m[[0m[31merror[0m] [0m[0m  val regRs2Num_ID     = Input(UInt(5.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:17:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val jumpEn_ID        = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:17:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val jumpEn_ID        = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:19:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardEXIDValid  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:19:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardEXIDValid  = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:20:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardMEMIDValid = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:20:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardMEMIDValid = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:21:26: not found: value Input[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardJump       = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:21:32: not found: value Bool[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardJump       = Input(Bool())[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:25:27: illegal inheritance from final class Module[0m
-[0m[[0m[31merror[0m] [0m[0mclass hazardCheck extends Module{[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:26:12: not found: value IO[0m
-[0m[[0m[31merror[0m] [0m[0m  val io = IO(new hazardCheckIO())[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:40:25: not found: value WireDefault[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardEXIDValid = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:40:43: value B is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardEXIDValid = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:41:26: not found: value WireDefault[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardMEMIDValid = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:41:44: value B is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardMEMIDValid = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:42:20: not found: value WireDefault[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardJump = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:42:38: value B is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m  val hazardJump = WireDefault(false.B)[0m
-[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:44:3: not found: value when[0m
-[0m[[0m[31merror[0m] [0m[0m  when(regWriteEn_EX && regWriteNum_EX =/= 0.U){[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:45:5: not found: value when[0m
-[0m[[0m[31merror[0m] [0m[0m    when(regRs1ReadEn_ID && regRs1Num_ID === regWriteNum_EX){[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:53:44: class java.lang.Enum is not a value[0m
-[0m[[0m[31merror[0m] [0m[0m  val noneSrc :: aluSrc :: memSrc :: Nil = Enum(3)[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:54:3: not found: value when[0m
-[0m[[0m[31merror[0m] [0m[0m  when(regWriteEn_MEM && regWriteNum_MEM =/= 0.U && regWriteSrc_MEM === memSrc){[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:55:5: not found: value when[0m
-[0m[[0m[31merror[0m] [0m[0m    when(regRs1ReadEn_ID && regRs1Num_ID === regWriteNum_MEM){[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:73:28: illegal inheritance from final class Module[0m
-[0m[[0m[31merror[0m] [0m[0mobject hazardCheck extends Module{[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/hazardCheckFSM.scala:74:47: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : miniCore.hazardCheck[0m
-[0m[[0m[31merror[0m] [0m[0m required: chisel3.RawModule[0m
-[0m[[0m[31merror[0m] [0m[0m  (new chisel3.stage.ChiselStage).emitVerilog(new hazardCheck())[0m
-[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m47 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:6:7: RegFile_ID_IO is already defined as class RegFile_ID_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegFile_ID_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:11:7: RegFile_WB_IO is already defined as class RegFile_WB_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegFile_WB_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:17:7: RegFile_EX_IO is already defined as class RegFile_EX_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegFile_EX_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:23:7: RegFile_IO is already defined as class RegFile_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegFile_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:31:7: RegFile is already defined as class RegFile[0m
+[0m[[0m[31merror[0m] [0m[0mclass RegFile extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:7:7: Transfer_ID_IOA is already defined as class Transfer_ID_IOA[0m
+[0m[[0m[31merror[0m] [0m[0mclass Transfer_ID_IOA extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:11:7: Transfer_ID_IOB is already defined as class Transfer_ID_IOB[0m
+[0m[[0m[31merror[0m] [0m[0mclass Transfer_ID_IOB extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:18:7: Transfer_PC_IO is already defined as class Transfer_PC_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Transfer_PC_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:23:7: Transfer_IO is already defined as class Transfer_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Transfer_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:30:7: Transfer is already defined as class Transfer[0m
+[0m[[0m[31merror[0m] [0m[0mclass Transfer extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:28:7: Decoder_IF_IO is already defined as class Decoder_IF_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_IF_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:32:7: Decoder_ID_IO is already defined as class Decoder_ID_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_ID_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:37:7: Decoder_EX_IOA is already defined as class Decoder_EX_IOA[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOA extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:45:7: Decoder_EX_IOB is already defined as class Decoder_EX_IOB[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOB extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:53:7: Decoder_EX_IOC is already defined as class Decoder_EX_IOC[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOC extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:60:7: Decoder_EX_IOD is already defined as class Decoder_EX_IOD[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOD extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:69:7: Decoder_IO is already defined as class Decoder_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:81:7: Decoder is already defined as class Decoder[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m18 errors found[0m
