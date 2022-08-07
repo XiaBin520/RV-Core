@@ -90,12 +90,6 @@ class Decoder extends Module{
   val Funct7 = io.IF.Instr(31, 25)
 
 
-  
-
-
-
-
-
   val immR :: immI :: immS :: immB :: immU :: immJ :: immCSRI :: Nil = Enum(7)
   val ImmCtrl = WireDefault(immR)
 
@@ -736,7 +730,7 @@ class IDStage extends Module{
   .elsewhen(io.DATAPATH.Rs2Ctrl === wbData) {RData2 := io.DATAPATH.WBData}
   .otherwise {RData2 := RegData2}
 
-  io.EX_E.PC := io.IF.PC
+  io.EX_E.PC     := io.IF.PC
   io.EX_E.RData1 := RData1
   io.EX_E.RData2 := RData2
 
