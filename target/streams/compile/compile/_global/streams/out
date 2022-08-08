@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/ID_EX.scala:55:8: not found: value Flush[0m
-[0m[[0m[31merror[0m] [0m[0m  when(Flush){[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/ID_EX.scala:60:14: not found: value Hold[0m
-[0m[[0m[31merror[0m] [0m[0m  .elsewhen(!Hold){[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/IDStage.scala:69:7: Decoder_IO is already defined as class Decoder_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder_IO extends Bundle{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/IDStage.scala:81:7: Decoder is already defined as class Decoder[0m
+[0m[[0m[31merror[0m] [0m[0mclass Decoder extends Module{[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

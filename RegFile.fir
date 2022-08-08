@@ -1,0 +1,65 @@
+circuit RegFile :
+  module RegFile :
+    input clock : Clock
+    input reset : UInt<1>
+    output io : { READ_CTRL : { flip Rs1 : UInt<5>, flip Rs2 : UInt<5>}, READ_DATA : { RData1 : UInt<64>, RData2 : UInt<64>}, WRITE_CTRL : { flip WEn : UInt<1>, flip Rd : UInt<5>}, WRITE_DATA : { flip WData : UInt<64>}}
+
+    wire RData1 : UInt<64>
+    RData1 <= UInt<64>("h0")
+    wire RData2 : UInt<64>
+    RData2 <= UInt<64>("h0")
+    wire _gprFile_WIRE : UInt<64>[32] @[RegFile.scala 55:33]
+    _gprFile_WIRE[0] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[1] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[2] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[3] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[4] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[5] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[6] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[7] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[8] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[9] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[10] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[11] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[12] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[13] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[14] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[15] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[16] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[17] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[18] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[19] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[20] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[21] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[22] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[23] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[24] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[25] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[26] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[27] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[28] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[29] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[30] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    _gprFile_WIRE[31] <= UInt<64>("h0") @[RegFile.scala 55:33]
+    reg gprFile : UInt<64>[32], clock with :
+      reset => (reset, _gprFile_WIRE) @[RegFile.scala 55:24]
+    RData1 <= gprFile[io.READ_CTRL.Rs1] @[RegFile.scala 56:10]
+    RData2 <= gprFile[io.READ_CTRL.Rs2] @[RegFile.scala 57:10]
+    node _T = eq(io.READ_CTRL.Rs1, io.WRITE_CTRL.Rd) @[RegFile.scala 58:12]
+    node _T_1 = and(_T, io.WRITE_CTRL.WEn) @[RegFile.scala 58:19]
+    node _T_2 = neq(io.WRITE_CTRL.Rd, UInt<1>("h0")) @[RegFile.scala 58:32]
+    node _T_3 = and(_T_1, _T_2) @[RegFile.scala 58:26]
+    when _T_3 : @[RegFile.scala 58:41]
+      RData1 <= io.WRITE_DATA.WData @[RegFile.scala 58:49]
+    node _T_4 = eq(io.READ_CTRL.Rs2, io.WRITE_CTRL.Rd) @[RegFile.scala 59:12]
+    node _T_5 = and(_T_4, io.WRITE_CTRL.WEn) @[RegFile.scala 59:19]
+    node _T_6 = neq(io.WRITE_CTRL.Rd, UInt<1>("h0")) @[RegFile.scala 59:32]
+    node _T_7 = and(_T_5, _T_6) @[RegFile.scala 59:26]
+    when _T_7 : @[RegFile.scala 59:41]
+      RData2 <= io.WRITE_DATA.WData @[RegFile.scala 59:49]
+    when io.WRITE_CTRL.WEn : @[RegFile.scala 60:12]
+      gprFile[io.WRITE_CTRL.Rd] <= io.WRITE_DATA.WData @[RegFile.scala 60:26]
+    gprFile[0] <= UInt<64>("h0") @[RegFile.scala 61:14]
+    io.READ_DATA.RData1 <= RData1 @[RegFile.scala 63:23]
+    io.READ_DATA.RData2 <= RData2 @[RegFile.scala 64:23]
+

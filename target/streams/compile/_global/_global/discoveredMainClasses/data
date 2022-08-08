@@ -1,1 +1,1 @@
-["ALU","WordALU","miniCore.CoreCtrl","miniCore.DataPath","miniCore.EXStage","miniCore.EX_MEM","miniCore.IDEX","miniCore.IDStage","miniCore.IFStage","miniCore.IF_ID","miniCore.MEM_WB","miniCore.PC"]
+["ALU","Decoder","ImmSext","RegFile","Transfer","WordALU","miniCore.CoreCtrl","miniCore.DataPath","miniCore.EXMEM","miniCore.EXStage","miniCore.IDEX","miniCore.IDStage","miniCore.IFStage","miniCore.IF_ID","miniCore.MEMStage","miniCore.MEMWB","miniCore.PC"]

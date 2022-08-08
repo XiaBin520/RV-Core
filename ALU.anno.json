@@ -9,11 +9,11 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~ALU|ALU>io_MEM_ALUOut",
+    "sink":"~ALU|ALU>io_DATAOUT_ALUData",
     "sources":[
-      "~ALU|ALU>io_ID_ALUOP",
-      "~ALU|ALU>io_ID_Src1",
-      "~ALU|ALU>io_ID_Src2"
+      "~ALU|ALU>io_CTRL_ALUOP",
+      "~ALU|ALU>io_DATAIN_Data1",
+      "~ALU|ALU>io_DATAIN_Data2"
     ]
   }
 ]

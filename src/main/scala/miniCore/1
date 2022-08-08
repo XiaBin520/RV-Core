@@ -1,19 +1,11 @@
-io.EX.EX_A.ALUOP := ALUOPReg           
-io.EX.EX_A.ALUSrc1Ctrl := ALUSrc1CtrlReg     
-io.EX.EX_A.ALUSrc2Ctrl := ALUSrc2CtrlReg     
-io.EX.EX_A.WordALUEn := WordALUEnReg       
-io.EX.EX_A.WordALUOP := WordALUOPReg       
+  val REn   = Output(Bool())
+  val RSize = Output(UInt(3.W))
+  val RAddr = Output(UInt(32.W))
+  val RData = Input(UInt(64.W))
 
-io.EX.EX_B.MEMREn := MEMREnReg       
-io.EX.EX_B.MEMRCtrl := MEMRCtrlReg     
-io.EX.EX_B.MEMWEn := MEMWEnReg       
-io.EX.EX_B.MEMWCtrl := MEMWCtrlReg     
+  val WEn   = Output(Bool())
+  val WSize = Output(UInt(3.W))
+  val WAddr = Output(UInt(3.W))
+  val WData = Output(UInt(3.W))
 
-io.EX.EX_C.RegWEn := RegWEnReg      
-io.EX.EX_C.RegWSrc := RegWSrcReg     
-io.EX.EX_C.Rd := RdReg          
-
-io.EX.EX_D.PCReg := PCReg         
-io.EX.EX_D.Imm := ImmReg        
-io.EX.EX_D.RData1 := RData1Reg     
-io.EX.EX_D.RData2 := RData2Reg     
+  val DATA = Output(UInt(64.W))

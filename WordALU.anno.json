@@ -1,0 +1,19 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~WordALU|WordALU>io_DATAOUT_WordALUData",
+    "sources":[
+      "~WordALU|WordALU>io_CTRL_WordALUOP",
+      "~WordALU|WordALU>io_DATAIN_Data1",
+      "~WordALU|WordALU>io_DATAIN_Data2"
+    ]
+  }
+]
