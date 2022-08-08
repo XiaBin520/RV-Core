@@ -239,7 +239,6 @@ class Decoder extends Module{
         is("b101".U) { when(Funct7 === BitPat("b000000?")) {ALUOP := opURShift}
                   .elsewhen(Funct7 === BitPat("b010000?")) {ALUOP := opSRShift}}
       }
-
     }
 
 
@@ -255,6 +254,7 @@ class Decoder extends Module{
       RegWEn      := true.B
       RegWSrc     := aluSrc
       Rs1REn      := true.B
+      WordALUEn   := true.B
       switch(Funct3){
         is("b000".U) {WordALUOP := opWordAdd}
         is("b001".U) {WordALUOP := opWordLShift}

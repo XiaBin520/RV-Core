@@ -1,22 +1,19 @@
-printf("%d, ", dut->io_EX_A_ALUOP);
-printf("%d, ", dut->io_EX_A_ALUSrc1Ctrl);
-printf("%d, ", dut->io_EX_A_ALUSrc2Ctrl);
-printf("%d, ", dut->io_EX_A_WordALUEn);
-printf("%d, ", dut->io_EX_A_WordALUOP);
-printf("%d, ", dut->io_EX_B_MEMREn);
-printf("%d, ", dut->io_EX_B_MEMRCtrl);
-printf("%d, ", dut->io_EX_B_MEMWEn);
-printf("%d, ", dut->io_EX_B_MEMWCtrl);
-printf("%d, ", dut->io_EX_C_RegWEn);
-printf("%d, ", dut->io_EX_C_RegWSrc);
-printf("%d, ", dut->io_EX_C_Rd);
-printf("%d, ", dut->io_EX_D_Rs1REn);
-printf("%d, ", dut->io_EX_D_Rs2REn);
-printf("%d, ", dut->io_EX_D_Rs1);
-printf("%d, ", dut->io_EX_D_Rs2);
-printf("%d, ", dut->io_EX_E_PC);
-printf("%d, ", dut->io_EX_E_Imm);
-printf("%d, ", dut->io_EX_E_RData1);
-printf("%d, ", dut->io_EX_E_RData2);
-printf("%d, ", dut->io_PC_PC);
-printf("%d, ", dut->io_HAZARD_JumpEn);
+io.EX.EX_A.ALUOP := ALUOPReg           
+io.EX.EX_A.ALUSrc1Ctrl := ALUSrc1CtrlReg     
+io.EX.EX_A.ALUSrc2Ctrl := ALUSrc2CtrlReg     
+io.EX.EX_A.WordALUEn := WordALUEnReg       
+io.EX.EX_A.WordALUOP := WordALUOPReg       
+
+io.EX.EX_B.MEMREn := MEMREnReg       
+io.EX.EX_B.MEMRCtrl := MEMRCtrlReg     
+io.EX.EX_B.MEMWEn := MEMWEnReg       
+io.EX.EX_B.MEMWCtrl := MEMWCtrlReg     
+
+io.EX.EX_C.RegWEn := RegWEnReg      
+io.EX.EX_C.RegWSrc := RegWSrcReg     
+io.EX.EX_C.Rd := RdReg          
+
+io.EX.EX_D.PCReg := PCReg         
+io.EX.EX_D.Imm := ImmReg        
+io.EX.EX_D.RData1 := RData1Reg     
+io.EX.EX_D.RData2 := RData2Reg     

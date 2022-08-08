@@ -1,55 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:6:7: RegFile_ID_IO is already defined as class RegFile_ID_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass RegFile_ID_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:11:7: RegFile_WB_IO is already defined as class RegFile_WB_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass RegFile_WB_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:17:7: RegFile_EX_IO is already defined as class RegFile_EX_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass RegFile_EX_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:23:7: RegFile_IO is already defined as class RegFile_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass RegFile_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/RegFile.scala:31:7: RegFile is already defined as class RegFile[0m
-[0m[[0m[31merror[0m] [0m[0mclass RegFile extends Module {[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:7:7: Transfer_ID_IOA is already defined as class Transfer_ID_IOA[0m
-[0m[[0m[31merror[0m] [0m[0mclass Transfer_ID_IOA extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:11:7: Transfer_ID_IOB is already defined as class Transfer_ID_IOB[0m
-[0m[[0m[31merror[0m] [0m[0mclass Transfer_ID_IOB extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:18:7: Transfer_PC_IO is already defined as class Transfer_PC_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass Transfer_PC_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:23:7: Transfer_IO is already defined as class Transfer_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass Transfer_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/Transfer.scala:30:7: Transfer is already defined as class Transfer[0m
-[0m[[0m[31merror[0m] [0m[0mclass Transfer extends Module{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:28:7: Decoder_IF_IO is already defined as class Decoder_IF_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_IF_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:32:7: Decoder_ID_IO is already defined as class Decoder_ID_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_ID_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:37:7: Decoder_EX_IOA is already defined as class Decoder_EX_IOA[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOA extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:45:7: Decoder_EX_IOB is already defined as class Decoder_EX_IOB[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOB extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:53:7: Decoder_EX_IOC is already defined as class Decoder_EX_IOC[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOC extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:60:7: Decoder_EX_IOD is already defined as class Decoder_EX_IOD[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_EX_IOD extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:69:7: Decoder_IO is already defined as class Decoder_IO[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder_IO extends Bundle{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/decoder.scala:81:7: Decoder is already defined as class Decoder[0m
-[0m[[0m[31merror[0m] [0m[0mclass Decoder extends Module{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m18 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/ID_EX.scala:55:8: not found: value Flush[0m
+[0m[[0m[31merror[0m] [0m[0m  when(Flush){[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/xiabin/workstation/CPU-Core/RV-Core/src/main/scala/miniCore/ID_EX.scala:60:14: not found: value Hold[0m
+[0m[[0m[31merror[0m] [0m[0m  .elsewhen(!Hold){[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
